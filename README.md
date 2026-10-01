@@ -25,7 +25,7 @@ Reines HTML, CSS und JavaScript. Kein Build-Schritt, kein Framework, keine exter
 
 ## Veröffentlichen mit GitHub Pages
 
-1. Neues Repository anlegen, z. B. `jkwdgroup-website` (privat oder öffentlich; GitHub Pages für private Repos erfordert einen kostenpflichtigen Plan).
+1. Neues Repository anlegen, z. B. `jkwdgroup-website` (öffentlich; GitHub Pages für private Repos erfordert einen kostenpflichtigen Plan).
 2. Alle Dateien dieses Ordners in das Repository hochladen (auch `.nojekyll` und `CNAME`).
 3. **Settings → Pages → Build and deployment:** Source „Deploy from a branch“, Branch `main`, Ordner `/ (root)`.
 4. **Custom domain:** `jkwdgroup.com` eintragen, nach der DNS-Prüfung **Enforce HTTPS** aktivieren.
@@ -45,12 +45,17 @@ Wichtig: E-Mail-Einträge (MX, SPF, DKIM) für info@jkwdgroup.com **nicht** ver�
 
 ## Vor dem Livegang
 
-- [ ] Impressum vollständig ausfüllen (Anschrift, HRB, Registergericht, ggf. USt-ID), danach `noindex` entfernen
-- [ ] Datenschutzerklärung ergänzen und prüfen lassen (GitHub Pages, Zoom Scheduler, E-Mail), danach `noindex` entfernen
-- [ ] Aussage „100 % digital und papierlos“ von der Steuerberatung bestätigen lassen
-- [ ] Netzwerk-Partner erst nach Freigabe namentlich nennen
-- [ ] Organigramm prüfen: Firmierungen, Beteiligungen, Vertragsstatus
-- [ ] IMPOLA-Website verlinken, sobald vorhanden
+- [x] Impressum mit Anschrift (Registerdaten nach HR-Eintragung ergänzen)
+- [x] Datenschutzerklärung (GitHub Pages, E-Mail über Zoom Mail, Zoom Scheduler mit Klick-Einwilligung)
+- [x] Partner EKP mit Logo, IMPOLA verlinkt
+- [ ] Nach HR-Eintragung: Registergericht, HRB und ggf. USt-ID im Impressum nachtragen, „i. G.“ entfernen
+- [ ] Zoom Scheduler: Branding auf JKWD Business Concepts umstellen (aktuell erscheint das Just-Kids-with-Dreams-Logo)
+- [ ] Nach Livegang: Einbettung des Kalenders testen; falls Zoom das Einbetten blockiert, bleibt der Button „In neuem Tab öffnen“
+
+## Nach dem Livegang
+
+- Google Search Console: Domain-Property `jkwdgroup.com` anlegen, TXT-Eintrag bei GoDaddy setzen, Sitemap `https://jkwdgroup.com/sitemap.xml` einreichen
+- Optional: TXT-Eintrag `gwork` → `v=spf1 include:_spf.google.com ~all`
 
 ## Pflege
 
