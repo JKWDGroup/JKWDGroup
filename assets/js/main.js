@@ -1,7 +1,7 @@
 /* JKWD Business Concepts · Navigation */
 (function(){
   var burger=document.querySelector('.burger'), menu=document.getElementById('menu');
-  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});
   menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.setAttribute('aria-expanded',false);});});
   var hs=document.querySelector('.has-sub'), b=hs.querySelector('button');
   b.addEventListener('click',function(e){e.stopPropagation();var o=hs.classList.toggle('open');b.setAttribute('aria-expanded',o);});
